@@ -46,7 +46,19 @@ ul {
 
 @media (min-width: 450px) {
     .container {
-        width: 400px;
+        width: 420px;
+    }
+}
+
+@media (min-width: 550px) {
+    .container {
+        width: 520px;
+    }
+}
+
+@media (min-width: 650px) {
+    .container {
+        width: 620px;
     }
 }
 
@@ -126,6 +138,16 @@ ul {
     line-height: 2;
     margin: 0 auto 50px auto;
     max-width: 70%;
+}
+
+@media(max-width:400px) {
+    .mainHeading p {
+        width: 80vw;
+        max-width: 90vw
+    }
+    .mainHeading h2 {
+        font-size: 35px;
+    }
 }
 
 
@@ -347,9 +369,9 @@ nav ul li a:hover {
 }
 
 .landing .text .content button:nth-of-type(1):hover {
-    color: #ff1984;
+    /* color: #ff1984;
     background-color: transparent;
-    border: 1px solid #ff1984;
+    border: 1px solid #ff1984; */
     transform: scale(1.1);
 }
 
@@ -663,6 +685,11 @@ nav ul li a:hover {
 @media(max-width:400px) {
     .SrvHeading h4 {
         font-size: 20px;
+    }
+    .shuffle li:hover {
+        background-color: #BF1363;
+        color: #fff !important;
+        border-radius: 5px;
     }
 }
 
@@ -1005,7 +1032,7 @@ nav ul li a:hover {
     position: relative;
 }
 
-@media(max-width:400px) {
+@media(max-width:470px) {
     .progHolder:nth-child(2) {
         font-size: 14px;
     }
@@ -1390,4 +1417,35 @@ footer .copyright span {
 
 footer .copyright span>span {
     color: #BF1363;
+}
+
+
+/* ====================== small screens problems fixed========================= */
+
+@media(max-width:450px) {
+    .contact .container .info address {
+        font-size: 14px;
+    }
+    .contact .container .info h4 {
+        font-size: 22px;
+    }
+    .contact .container form textarea.mainInput {
+        height: 120px;
+    }
+    .contact .container form input[type="submit"] {
+        padding: 15px;
+    }
+    .contact .mainHeading p {
+        margin: 0 auto 30px auto;
+        font-size: 15px;
+        position: relative;
+        left: -15px;
+    }
+    footer .copyright {
+        margin-top: 30px;
+        width: 85vw;
+        text-align: left;
+        position: relative;
+        left: -20px;
+    }
 }
