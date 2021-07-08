@@ -196,6 +196,14 @@ header nav .menu {
     color: white;
     font-size: 22px;
     cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(204, 204, 204, 0.699);
+    ;
+}
+
+header nav .menu:hover {
+    background-color: rgba(163, 155, 155, 0.582);
 }
 
 .menuClicked {
@@ -370,8 +378,8 @@ nav ul li a:hover {
 
 .landing .text .content button:nth-of-type(1):hover {
     /* color: #ff1984;
-    background-color: transparent;
-    border: 1px solid #ff1984; */
+background-color: transparent;
+border: 1px solid #ff1984; */
     transform: scale(1.1);
 }
 
@@ -567,6 +575,9 @@ nav ul li a:hover {
 
 .SrvHeading h4 {
     position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 28px;
 }
 
 .SrvHeading h4::after {
@@ -574,7 +585,7 @@ nav ul li a:hover {
     background-color: #BF1363;
     position: absolute;
     height: 2px;
-    width: 220px;
+    width: 60%;
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
@@ -678,13 +689,13 @@ nav ul li a:hover {
         font-size: 6vw;
     }
     .shuffle li {
-        font-size: 3.1vw;
+        font-size: 3.4vw;
     }
 }
 
-@media(max-width:400px) {
+@media(max-width:450px) {
     .SrvHeading h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .shuffle li:hover {
         background-color: #BF1363;
@@ -1447,5 +1458,11 @@ footer .copyright span>span {
         text-align: left;
         position: relative;
         left: -20px;
+    }
+}
+
+@media(max-width:550px) {
+    .landing {
+        background-image: url(../images/mob-bg2.jpg);
     }
 }

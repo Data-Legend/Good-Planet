@@ -8,17 +8,18 @@ window.onload = function() {
     setInterval(changeImage, 5000);
 
     function changeImage() {
-        i++;
-        if (i === 3) {
-            i = 0;
-        }
-        $(".landing").css('background-image', `url(images/${landingPics[i]})`);
-        $(".bullets li").removeClass("activeBullet");
-        $(`#bull${i}`).addClass("activeBullet");
+        if (window.innerWidth > 550) {
+            i++;
+            if (i === 3) {
+                i = 0;
+            }
+            $(".landing").css('background-image', `url(images/${landingPics[i]})`);
+            $(".bullets li").removeClass("activeBullet");
+            $(`#bull${i}`).addClass("activeBullet");
 
+        }
     }
 }
-
 
 $(".shuffle")[0].addEventListener("click", (clickedli) => { //active filterd li
 
