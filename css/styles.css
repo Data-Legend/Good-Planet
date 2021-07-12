@@ -631,13 +631,13 @@ border: 1px solid #ff1984; */
 .imgs-container .box .caption p {
     width: fit-content;
     font-weight: bold;
-    color: #f3f3f3;
     margin: 0 auto;
-    font-size: 16px;
-    background-color: #00aa64ba;
+    font-size: 15px;
     padding: 10px;
     border-radius: 5px;
-    cursor: pointer
+    cursor: pointer;
+    color: #f3f3f3;
+    background-color: #00aa64ba;
 }
 
 .imgs-container .box .caption h4 {
@@ -1464,5 +1464,12 @@ footer .copyright span>span {
 @media(max-width:550px) {
     .landing {
         background-image: url(../images/mob-bg2.jpg);
+    }
+}
+
+@media(max-width:620px) {
+    .offerBox .text span:nth-of-type(3) {
+        padding: 3px 5px;
+        top: 0;
     }
 }
