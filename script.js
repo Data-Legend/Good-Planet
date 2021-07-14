@@ -7,7 +7,7 @@ $(".form")[0].addEventListener("click", () => {
     if (lang.includes("arb")) {
         window.location.replace('https://js-player.github.io/Good-Planet');
     } else {
-        window.location.replace('https://js-player.github.io/Good-Planet/ar.html');
+        window.location.replace('https://js-player.github.io/Good-Planet/ar');
     }
 
 })

@@ -537,11 +537,12 @@ nav ul li a:hover {
         background-image: url(../images/landing-2.jpg);
     }
     .landing .text .content h2 {
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 44px;
+        margin-bottom: 15px;
+        white-space: nowrap;
     }
     .landing .text .content p {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
     .landing .text .content button:nth-of-type(1) {
@@ -559,8 +560,6 @@ nav ul li a:hover {
 
 @media(max-width:380px) {
     .landing .text .content h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
         max-width: 100%;
     }
 }
@@ -629,7 +628,7 @@ nav ul li a:hover {
 
 @media(max-width:500px) {
     .imgs-container .box {
-        flex-basis: 90%;
+        /* flex-basis: 90%; */
         margin-right: auto;
         margin-left: auto;
     }
@@ -755,11 +754,11 @@ nav ul li a:hover {
 
 @media(max-width:500px) {
     .imgs-container .box .caption h4 {
-        font-size: 22px;
+        font-size: 16px;
     }
     .imgs-container .box .caption p {
-        font-size: 20px;
-        padding: 10px 40px;
+        font-size: 10px;
+        padding: 5px 15px;
     }
     .SrvHeading h4 {
         font-size: 6vw;
@@ -918,7 +917,7 @@ nav ul li a:hover {
 
 @media (max-width: 400px) {
     .offerBox {
-        flex-basis: 95%;
+        /* flex-basis: 95%; */
         margin-bottom: 15px;
     }
 }
@@ -1288,12 +1287,6 @@ nav ul li a:hover {
     .testomonials .person .img {
         padding-right: 0px;
         padding-bottom: 20px;
-    }
-}
-
-@media only screen and (max-width: 600px) and (min-width: 550px) {
-    .information .container {
-        width: 550px !important;
     }
 }
 
