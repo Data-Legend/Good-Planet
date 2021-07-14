@@ -15,7 +15,8 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Cairo', sans-serif;
 }
 
 ul {
@@ -61,7 +62,7 @@ ul {
 
 @keyframes typing {
     from {
-        width: 0
+        width: 50%
     }
     to {
         width: 100%
@@ -148,7 +149,6 @@ ul {
 /* ======================================Components===================================== */
 
 .mainHeading {
-    font-family: 'Inconsolata', monospace;
     text-align: center;
 }
 
@@ -260,7 +260,6 @@ header nav .menu {
     padding: 4px 10px;
     border-radius: 3px;
     border: 1px solid rgba(204, 204, 204, 0.699);
-    ;
 }
 
 header nav .menu:hover {
@@ -284,6 +283,7 @@ header nav .menu:hover {
 }
 
 header nav ul {
+    direction: rtl;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -325,7 +325,12 @@ nav ul li a:hover {
 
 .form i {
     color: white;
-    font-size: 20px;
+    font-size: 26px;
+}
+
+.form i:hover {
+    transform: scale(1.1);
+    color: #aab7bf;
 }
 
 .form {
@@ -334,13 +339,8 @@ nav ul li a:hover {
     margin-left: 30px;
 }
 
-.form i:hover {
-    transform: scale(1.1);
-    color: #aab7bf;
-}
-
 .form::after {
-    content: "AR";
+    content: "EN";
     position: absolute;
     color: white;
     bottom: -9px;
@@ -417,6 +417,7 @@ nav ul li a:hover {
 }
 
 .landing .text .content h2 {
+    font-family: 'Open Sans', sans-serif;
     text-align: left;
     text-shadow: 0 1px 2px #fffcfd;
     font-size: 5vw;
@@ -425,16 +426,16 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.landing .text .content h2 span {
+.landing .text .content h2 span:nth-child(2) {
     color: #BF1363;
 }
 
 .landing .text .content p {
-    font-family: 'Inconsolata', monospace;
     font-size: 22px;
     line-height: 2;
     color: #231E23;
-    text-align: left;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .landing .text .content button {
@@ -453,9 +454,6 @@ nav ul li a:hover {
 }
 
 .landing .text .content button:nth-of-type(1):hover {
-    /* color: #ff1984;
-background-color: transparent;
-border: 1px solid #ff1984; */
     transform: scale(1.1);
 }
 
@@ -575,6 +573,7 @@ border: 1px solid #ff1984; */
 }
 
 .portfolio .shuffle {
+    direction: rtl;
     padding-top: 30px;
     margin-top: 20px;
     display: flex;
@@ -651,11 +650,10 @@ border: 1px solid #ff1984; */
 }
 
 .SrvHeading h4 {
-    font-family: 'Inconsolata', monospace;
     position: relative;
     width: fit-content;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .SrvHeading h4::after {
@@ -691,7 +689,6 @@ border: 1px solid #ff1984; */
 }
 
 .imgs-container .box .caption {
-    font-family: 'Inconsolata', monospace;
     position: absolute;
     bottom: -100%;
     width: 100%;
@@ -775,6 +772,7 @@ border: 1px solid #ff1984; */
 @media(max-width:450px) {
     .SrvHeading h4 {
         font-size: 18px;
+        line-height: 1.2;
     }
     .shuffle li:hover {
         background-color: #BF1363;
@@ -806,7 +804,6 @@ border: 1px solid #ff1984; */
 }
 
 .videoSection .text {
-    font-family: 'Inconsolata', monospace;
     padding: 20px 0;
     width: 100%;
     position: absolute;
@@ -860,7 +857,6 @@ border: 1px solid #ff1984; */
 }
 
 .offers .head h2 {
-    font-family: 'Inconsolata', monospace;
     display: inline-block;
     padding-bottom: 15px;
     font-size: 28px;
@@ -868,7 +864,6 @@ border: 1px solid #ff1984; */
 }
 
 .offers .head span {
-    font-family: 'Inconsolata', monospace;
     color: #00aa64;
     font-size: 14px;
     width: fit-content;
@@ -923,8 +918,8 @@ border: 1px solid #ff1984; */
 
 @media (max-width: 400px) {
     .offerBox {
-        flex-basis: 98%;
-        margin-bottom: 10px;
+        flex-basis: 95%;
+        margin-bottom: 15px;
     }
 }
 
@@ -969,7 +964,7 @@ border: 1px solid #ff1984; */
 }
 
 .offerBox .text h3 {
-    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
     padding-bottom: 5px;
     color: rgb(102, 102, 102)
 }
@@ -1031,13 +1026,12 @@ border: 1px solid #ff1984; */
 
 .testomonials .text h4,
 .skills .text h4 {
-    padding-bottom: 22px;
+    padding-bottom: 25px;
     font-size: 1.2rem;
 }
 
 .testomonials .text p,
 .skills .text p {
-    font-family: 'Inconsolata', monospace;
     color: #777;
     line-height: 1.9;
     text-align: center;
@@ -1045,10 +1039,12 @@ border: 1px solid #ff1984; */
 }
 
 .skills .text p {
+    direction: rtl;
     padding: 0 30px;
 }
 
 .testomonials .text p {
+    direction: rtl;
     padding-left: 1vw;
 }
 
@@ -1068,11 +1064,11 @@ border: 1px solid #ff1984; */
 }
 
 .testomonials .person .bio {
-    line-height: 1.6;
+    text-align: right;
+    line-height: 1.9;
 }
 
 .testomonials .person .bio {
-    font-family: 'Inconsolata', monospace;
     position: relative;
     margin-right: 80px;
     align-self: baseline;
@@ -1123,7 +1119,6 @@ border: 1px solid #ff1984; */
 }
 
 .progHolder h4 {
-    font-family: 'Inconsolata', monospace;
     font-weight: normal;
     margin-bottom: 15px;
     position: relative;
@@ -1165,8 +1160,7 @@ border: 1px solid #ff1984; */
 }
 
 .progHolder .prog4::before {
-    content: "172M";
-    right: 25px;
+    content: "174M";
     font-size: 14px;
 }
 
@@ -1336,11 +1330,10 @@ border: 1px solid #ff1984; */
 }
 
 .quote q {
-    font-family: 'Inconsolata', monospace;
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .quote p {
@@ -1358,7 +1351,6 @@ border: 1px solid #ff1984; */
 /* ========================================== */
 
 .contact {
-    font-family: 'Inconsolata', monospace;
     padding-bottom: 80px;
     padding-top: 20px;
 }
@@ -1466,7 +1458,6 @@ border: 1px solid #ff1984; */
 }
 
 footer {
-    font-family: 'Inconsolata', monospace;
     padding: 50px 0;
     background-image: url("../images/subscribe.jpg");
     background-size: cover;
@@ -1549,7 +1540,6 @@ footer .copyright span>span {
     footer .copyright {
         margin-top: 30px;
         width: 85vw;
-        text-align: left;
         position: relative;
         left: -20px;
     }
@@ -1565,6 +1555,24 @@ footer .copyright span>span {
     .offerBox .text span:nth-of-type(3) {
         padding: 3px 5px;
         top: 0;
+    }
+    .landing .text .content h2 {
+        text-align: center;
+    }
+}
+
+@media(max-width:400px) {
+    footer .container p:not(.copyright) {
+        font-size: 20px;
+    }
+    .offers .head h2 {
+        font-size: 22px;
+    }
+    .landing .text .content p {
+        padding-right: 0;
+    }
+    .form i {
+        font-size: 22px;
     }
 }
 

@@ -2,6 +2,15 @@ const dropMenu = $(".menu")[0]; //menu icon
 dropMenu.addEventListener("click", () => {
     $("#navMenu").toggleClass("menuClicked");
 });
+$(".form")[0].addEventListener("click", () => {
+    const lang = document.styleSheets[2].href;
+    if (lang.includes("arb")) {
+        window.location.replace('https://js-player.github.io/Good-Planet');
+    } else {
+        window.location.replace('https://js-player.github.io/Good-Planet/ar.html');
+    }
+
+})
 var i = 0;
 const landingPics = ["landing-0.jpg", "landing-1.jpg", "landing-2.jpg"]; //images array
 window.onload = function() {
